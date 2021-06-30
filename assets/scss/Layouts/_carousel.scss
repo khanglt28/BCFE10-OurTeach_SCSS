@@ -1,0 +1,49 @@
+.teachCarousel {
+    background-image: url(../images/yellow_top_wave_01.png);
+    background-position: top center; 
+    background-size: contain;
+    background-repeat: no-repeat;  
+    position: relative;       
+    h1 {
+        @include styleText($fs-1,$fw-2,$color-pink-1);     
+        margin-top: 80px;  
+        z-index: 5;
+    }
+    h3 {
+        @include styleText($fs-4,$fw-3,$color-dark-1);
+        z-index: 5;
+    }       
+}   
+
+.background-container.bg-1{
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/Violet_top_left_wave.png);
+    background-position: bottom; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;       
+}
+
+//responsive
+@include responsive("large-down"){
+    .teachCarousel{
+        padding: $pd-8 0;        
+    } 
+}
+@include responsive("medium-down"){
+    .teachCarousel{       
+        h1 {
+            font-size: $fs-7;
+        }
+        h3{
+            font-size: $fs-8;
+        }
+    } 
+}
+@include responsive("small-down"){
+    .teachCarousel{       
+        padding: $pd-5 0;
+    } 
+}

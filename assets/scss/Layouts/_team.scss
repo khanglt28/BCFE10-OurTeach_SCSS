@@ -1,0 +1,23 @@
+.team {
+    background-color: $color-bg-1;
+    // height: 600px;    
+    position: relative;
+}
+
+.background-container.bg-2{
+    width: 100%;
+    height: 62%;
+    background-image: url(../images/Wave_White_bottom_right_shape_01.png);
+    background-position: bottom center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    // z-index: -1;
+}
+
+@include responsive("small-down"){
+    .team {
+        width: 90%;
+    }
+}

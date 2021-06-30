@@ -1,0 +1,21 @@
+footer {    
+    height: 450px;
+    background-image: url(../images/footer_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container {
+        padding-top: $pd-5;
+    }
+    .list {       
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;        
+        margin-bottom: $mg-6;  
+    }
+
+    .list .item.item-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: $mg-7;
+    }
+}

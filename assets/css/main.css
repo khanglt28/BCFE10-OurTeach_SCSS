@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #181818;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+header .navbar-toggler-icon {
+  font-size: 1.55rem;
+  line-height: 1.5em;
+  color: #181818;
+}
+
+header .nav-item.nav-left {
+  margin-right: 30px;
+}
+
+header #teachNavbar .nav-link {
+  color: #181818;
+  font-weight: 600;
+}
+
+header #teachNavbar .nav-link:hover {
+  color: #b61984;
+}
+
+header #teachNavbar .icon {
+  margin-right: 1px;
+  color: #181818;
+}
+
+header #teachNavbar .icon:hover {
+  color: #b61984;
+}
+
+@media screen and (max-width: 991.98px) {
+  header #teachNavbar .nav-link {
+    text-align: center;
+  }
+}
+
+.teachCarousel {
+  background-image: url(../images/yellow_top_wave_01.png);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.teachCarousel h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #b61984;
+  margin-top: 80px;
+  z-index: 5;
+}
+
+.teachCarousel h3 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #181818;
+  z-index: 5;
+}
+
+.background-container.bg-1 {
+  width: 100%;
+  height: 50%;
+  background-image: url(../images/Violet_top_left_wave.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 991.98px) {
+  .teachCarousel {
+    padding: 150px 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .teachCarousel h1 {
+    font-size: 12px;
+  }
+  .teachCarousel h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .teachCarousel {
+    padding: 100px 0;
+  }
+}
+
+.team {
+  background-color: #dcd1f0;
+  position: relative;
+}
+
+.background-container.bg-2 {
+  width: 100%;
+  height: 62%;
+  background-image: url(../images/Wave_White_bottom_right_shape_01.png);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 575.98px) {
+  .team {
+    width: 90%;
+  }
+}
+
+footer {
+  height: 450px;
+  background-image: url(../images/footer_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .container {
+  padding-top: 100px;
+}
+
+footer .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 80px;
+}
+
+footer .list .item.item-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact {
+  background-image: url(../images/accent_bottom_wave_01.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact .container {
+  margin-top: 30px;
+}
+
+.contact .contact-form.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.contact .contact-form.row .row-2 {
+  grid-column: 1 / span 2;
+  display: block;
+}
+
+.cardTeam {
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  z-index: 5;
+  transition: all 0.4s ease-in-out;
+}
+
+.cardTeam h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #b61984;
+}
+
+.cardTeam h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #181818;
+}
+
+.cardTeam .img-box {
+  overflow: hidden;
+}
+
+.cardTeam .card-img-top {
+  margin: 0;
+  padding: 0;
+  transition: all 0.8s;
+}
+
+.cardTeam .card-img-top:hover {
+  transform: scale(1.05);
+}
+
+.cardTeam:hover {
+  box-shadow: -10px 20px rgba(172, 168, 168, 0.1);
+}
+
+.inputContact {
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+  outline: none;
+}
+
+.inputBox {
+  border: 1px solid #181818;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.inputBox .fas {
+  font-size: 15px;
+  color: #b61984;
+  padding-bottom: 0;
+}
+
+.inputContact-2 {
+  transition: all 0.2s;
+  background-color: transparent;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.inputContact-2:hover {
+  border: 0.5px solid white;
+}
+
+.inputContact-2:focus {
+  outline: none;
+}
+
+.btnSubmit {
+  background-color: #b61984;
+  border-color: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+.btnSubmit:hover {
+  background-color: #ffffff;
+  color: #b61984;
+  border: 1px solid #b61984;
+}
+
+.btnSubscribe {
+  padding: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  box-shadow: 0 0 0 3em #ffffff inset;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  outline: none;
+  background-color: transparent;
+}
+
+.btnSubscribe:hover {
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0 0 0 1px #ffffff inset;
+}
+
+.btnSubscribe:focus {
+  outline: none;
+}
+
+.btnHeader {
+  background-color: #b61984;
+  border-color: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s linear;
+}
+
+.btnHeader:hover {
+  background-color: #ffffff;
+  color: #b61984 !important;
+  border: 1px solid #b61984;
+}
+/*# sourceMappingURL=main.css.map */

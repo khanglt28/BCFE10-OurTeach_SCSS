@@ -1,0 +1,41 @@
+header {
+    background-color: $color-none;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    .navbar-toggler-icon{
+        font-size: $fs-5;
+        line-height: 1.5em;
+        color: $color-dark-1;
+    }
+    .nav-item.nav-left {
+        margin-right: $mg-2;
+    }
+    #teachNavbar {
+        .nav-link {
+            color: $color-dark-1;
+            font-weight: $fw-2;
+            &:hover {
+                color: $color-pink-1;
+            }
+        }
+        .icon {
+            margin-right: $mg-1;
+            color: $color-dark-1;
+            &:hover {
+                color: $color-pink-1;
+            }
+        }
+    }    
+}
+
+//responsive
+@include responsive("large-down"){
+    header{
+        #teachNavbar {          
+            .nav-link{
+                text-align: center;
+            }
+        } 
+    } 
+}

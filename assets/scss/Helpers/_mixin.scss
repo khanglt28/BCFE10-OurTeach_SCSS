@@ -1,0 +1,27 @@
+@mixin styleText($fs,$fw,$color) {
+    font-size:$fs ;
+    font-weight:$fw ;
+    color:$color ;
+}
+
+@mixin styleButtonHover($bg, $bd-color, $color, $fs, $p, $bd, $radius) {
+    background-color: $bg;
+    border-color: $bd-color;
+    color: $color;
+    font-size: $fs;
+    padding: $p;
+    border: $bd;
+    border-radius: $radius;
+  }
+
+@mixin responsive($screen) {   
+    @if(map-has-key($map:$breakpoints , $key:$screen )){      
+        $value: map-get($map:$breakpoints , $key:$screen );       
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{       
+        @warn "Screen is undefined";
+    }
+}

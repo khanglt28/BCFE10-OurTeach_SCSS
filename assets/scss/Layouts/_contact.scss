@@ -1,0 +1,18 @@
+.contact {
+    background-image: url(../images/accent_bottom_wave_01.png);
+    background-position: bottom; 
+    background-size: cover;
+    background-repeat: no-repeat;    
+    .container {
+        margin-top: $mg-2;
+    }        
+    .contact-form.row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: $mg-2;
+    }
+    .contact-form.row .row-2 {
+        grid-column: 1 / span 2;
+        display: block;
+    }      
+}
